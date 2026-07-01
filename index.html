@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manitos</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="supabase.js"></script>
+</head>
+<body>
+
+<div id="landing" class="landing-screen">
+
+  <div class="overlay"></div>
+
+  <div class="landing-content">
+    <button id="ingresar-btn">INGRESAR</button>
+  </div>
+
+</div>
+
+<div id="main-site" class="hidden">
+
+  <header class="navbar">
+
+    <button id="menu-toggle">☰</button>
+
+    <nav id="menu" class="menu hidden-menu">
+      <button onclick="showSection('productos')">📚 Productos</button>
+      <button onclick="showSection('sobreMi')">👩‍🏫 Sobre mí</button>
+      <button onclick="showSection('sesiones')">📅 Solicitar sesiones</button>
+    </nav>
+
+  </header>
+
+  <section class="main-background">
+
+    <div class="background-overlay"></div>
+
+    <section id="productos" class="hidden section">
+      <h2>📚 Productos Digitales</h2>
+      <div id="productos-container" class="cards"></div>
+    </section>
+
+    <section id="sobreMi" class="hidden section">
+      <h2>👩‍🏫 Sobre mí</h2>
+
+      <div id="sobre-mi-texto"></div>
+
+      <div id="galeria" class="galeria"></div>
+    </section>
+
+    <section id="sesiones" class="hidden section">
+
+      <div class="turnos-box">
+
+        <h2>📅 Solicitar sesiones</h2>
+
+        <p>📧 consultoriomanitos@gmail.com</p>
+
+        <p>📱 +54 11 0000-0000</p>
+
+        <a
+          class="whatsapp-btn"
+          href="https://wa.me/5491100000000?text=Hola%20😊%20quisiera%20consultar%20por%20sesiones%20psicopedagógicas"
+          target="_blank"
+        >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" />
+          Contactar por WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
